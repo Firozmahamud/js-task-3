@@ -1,7 +1,7 @@
 .container{
     margin: auto;
     margin-top: 20px;
-    /* border: 3px solid black; */
+   
 }
 .col-md-, .col-lg-4{
     margin-bottom: 20px;
@@ -20,9 +20,6 @@
 .uk-border-circle{
      width: 50px !important;
      border-radius: 0%;
-
-   /* width: 100px !important;
-    height: 100px !important;*/
 }
 .fa-cart-arrow-down{
     color: white;
