@@ -3,12 +3,11 @@ let cartContainer = document.getElementsByTagName('tbody')[0]
 let quantityFields = document.getElementsByClassName('num')
 let delete_buttons = document.getElementsByClassName('uk-button')
 
-// picking up all the Add-To-Cart buttons
 for(let i = 0; i < addToCartButtons.length; i++){
     addToCartButtons[i].addEventListener('click', addToCart)
     
 }
-// This function helps to add items to our cart
+
 function addToCart(event){
 
     
@@ -40,16 +39,13 @@ function addToCart(event){
     cartContainer.append(itemContainer)
 
 
-
-
-    // Accessing individual quantity fields
     for(let i = 0; i < quantityFields.length; i++){
         quantityFields[i].value = 1
         quantityFields[i].addEventListener('change', totalCost)
                 
     }
 
-    // Accessing individual quantity fields
+    
     for(let i = 0; i < delete_buttons.length; i++){
         delete_buttons[i].addEventListener('click', removeItem)
     }
@@ -60,8 +56,6 @@ function addToCart(event){
 }
 
 
-
-// This function helps to add up the total of the items
 function grandTotal(){
     let total = 0
     let grand_total = document.getElementsByClassName('grand-total')[0]
